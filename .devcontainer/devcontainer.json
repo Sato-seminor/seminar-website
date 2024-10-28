@@ -1,0 +1,20 @@
+{
+  "name": "Seminar Website",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bookworm",
+  // Nextが起動するサーバーのポートを転送
+  "forwardPorts": [3000],
+  // NOTE: https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-a-targeted-named-volume
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
+  "postCreateCommand": "sudo chown node node_modules && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
+}

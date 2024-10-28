@@ -1,0 +1,10 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "always",
+    "source.fixAll.eslint": "always"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // NOTE: https://nextjs.org/docs/app/building-your-application/configuring/typescript#typescript-plugin
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
