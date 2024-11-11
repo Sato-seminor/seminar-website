@@ -7,7 +7,8 @@
   "mounts": [
     "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
   ],
-  "postCreateCommand": "sudo chown node node_modules && npm install",
+  // NOTE: https://gist.github.com/Seasawher/18f5781e372e4fbe691ee8942828bd8e
+  "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && sudo chown node node_modules && npm install",
   "customizations": {
     "vscode": {
       "extensions": [
