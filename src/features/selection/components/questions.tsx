@@ -7,7 +7,7 @@ import {
 
 import { QuestionsProps } from '../types/questions';
 
-export default function Questions(props: QuestionsProps) {
+export function Questions(props: QuestionsProps) {
   return (
     <section className="mb-12">
       <h2 className="mb-6 text-2xl font-bold">よくある質問</h2>
