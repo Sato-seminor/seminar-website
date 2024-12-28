@@ -23,7 +23,9 @@ export function Questions(props: QuestionsProps) {
         {props.questions.map((item) => (
           <AccordionItem key={item.id} value={item.id}>
             <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>
-            <AccordionContent>{item.answer}</AccordionContent>
+            <AccordionContent>
+              <div className="whitespace-pre-line">{item.answer}</div>
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
