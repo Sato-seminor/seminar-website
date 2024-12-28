@@ -22,7 +22,7 @@ export default function SeminarPage() {
             <div className="w-full md:w-1/3">
               <Image
                 src="/datascience.jpg"
-                alt="教授の写真"
+                alt="教材の写真"
                 width={300}
                 height={300}
                 className="rounded-lg shadow-lg"
@@ -41,9 +41,9 @@ export default function SeminarPage() {
             <div className="w-full md:w-1/3">
               <Image
                 src="/pc.png"
-                alt="教授の写真"
-                width={300}
-                height={300}
+                alt="共同研究"
+                width={200}
+                height={200}
                 className="rounded-lg shadow-lg"
               />
             </div>
@@ -76,9 +76,9 @@ export default function SeminarPage() {
             <div className="w-full md:w-1/3">
               <Image
                 src="/football.jpg"
-                alt="教授の写真"
-                width={300}
-                height={300}
+                alt="フットサル大会"
+                width={400}
+                height={400}
                 className="rounded-lg shadow-lg"
               />
             </div>
@@ -95,7 +95,7 @@ export default function SeminarPage() {
             <div className="w-full md:w-1/3">
               <Image
                 src="/trip.jpg"
-                alt="教授の写真"
+                alt="宿泊場所"
                 width={300}
                 height={300}
                 className="rounded-lg shadow-lg"

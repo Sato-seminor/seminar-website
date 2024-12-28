@@ -20,8 +20,8 @@ export default function SeminarPage() {
               <Image
                 src="/all_members.jpg"
                 alt="教授の写真"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
                 className="rounded-lg shadow-lg"
               />
             </div>
@@ -39,8 +39,8 @@ export default function SeminarPage() {
               <Image
                 src="/professor-image.png"
                 alt="教授の写真"
-                width={300}
-                height={300}
+                width={200}
+                height={200}
                 className="rounded-lg shadow-lg"
               />
             </div>
@@ -80,10 +80,10 @@ export default function SeminarPage() {
             </div>
             <div className="w-full md:w-1/3">
               <Image
-                src="/professor-image.png"
-                alt="教授の写真"
-                width={300}
-                height={300}
+                src="/career_chart.jpg"
+                alt="進路の分類"
+                width={500}
+                height={500}
                 className="rounded-lg shadow-lg"
               />
             </div>
