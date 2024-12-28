@@ -4,7 +4,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { QuestionsProps } from '@/features/selection/types/questions';
+
+interface Question {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export interface QuestionsProps {
+  questions: Question[];
+}
 
 export function Questions(props: QuestionsProps) {
   return (
