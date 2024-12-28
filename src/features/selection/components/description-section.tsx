@@ -1,4 +1,4 @@
-import { DescriptionSectionProps } from '../types/description-section-props';
+import { DescriptionSectionProps } from '@/features/selection/types/description-section-props';
 
 export function DescriptionSection(props: DescriptionSectionProps) {
   return (

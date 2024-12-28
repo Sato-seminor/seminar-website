@@ -1,7 +1,7 @@
-import { DescriptionSection } from '../../features/selection/components/description-section';
-import { Questions } from '../../features/selection/components/questions';
-import { descriptionSections } from '../../features/selection/data/description-section';
-import { questions } from '../../features/selection/data/questions';
+import { DescriptionSection } from '@/features/selection/components/description-section';
+import { Questions } from '@/features/selection/components/questions';
+import { descriptionSections } from '@/features/selection/data/description-section';
+import { questions } from '@/features/selection/data/questions';
 
 export default function Selection() {
   return (
