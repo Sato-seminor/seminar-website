@@ -1,4 +1,6 @@
-export const descriptionSections = [
+import { DescriptionSectionProps } from '@/features/selection/components/description-section';
+
+export const descriptionSections: (DescriptionSectionProps & { id: string })[] = [
   {
     id: 'd1',
     title: 'ゼミへの応募方法',

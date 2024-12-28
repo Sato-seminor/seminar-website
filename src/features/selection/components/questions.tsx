@@ -5,13 +5,13 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-interface Question {
+export interface Question {
   id: string;
   question: string;
   answer: string;
 }
 
-export interface QuestionsProps {
+interface QuestionsProps {
   questions: Question[];
 }
 

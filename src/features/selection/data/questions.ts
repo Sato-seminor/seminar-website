@@ -1,4 +1,6 @@
-export const questions = [
+import { Question } from '@/features/selection/components/questions';
+
+export const questions: Question[] = [
   {
     id: 'q1',
     question: '事前知識はどのくらい必要ですか？',
