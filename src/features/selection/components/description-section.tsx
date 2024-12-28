@@ -1,4 +1,7 @@
-import { DescriptionSectionProps } from '@/features/selection/types/description-section-props';
+export interface DescriptionSectionProps {
+  title: string;
+  description: string;
+}
 
 export function DescriptionSection(props: DescriptionSectionProps) {
   return (
