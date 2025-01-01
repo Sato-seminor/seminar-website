@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -45,6 +46,13 @@ export function Navigation() {
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4">
         <NavigationMenu>
           <NavigationMenuList>
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <Image src="/seminar-logo.svg" width={64} height={48} alt="ゼミロゴ" />
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
