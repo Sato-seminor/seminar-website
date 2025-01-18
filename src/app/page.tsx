@@ -1,63 +1,21 @@
-import { GraduationCap, BookOpen, Users } from 'lucide-react';
-import Link from 'next/link';
-
-import { Button } from '@/components/ui/button';
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-32">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-6xl">未来を創る研究の場</h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-            私たちのゼミナールでは、理論と実践を融合させた学びを通じて、次世代のリーダーを育成します。
-          </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link href="/about/briefing">
-              <Button size="lg">
-                説明会に参加する
-                <GraduationCap className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-          </div>
+    <div className="fixed inset-0 mt-16 flex justify-center bg-gradient-to-r from-primary/10 via-primary/5 to-background md:items-center">
+      <img
+        src="/sphere.png"
+        alt="球体"
+        loading="eager"
+        className="mt-32 h-[300px] w-[300px] object-contain md:mt-0 md:h-[600px] md:w-[600px]"
+      />
+      <div className="absolute bottom-20 left-6 md:bottom-28 md:left-12">
+        <div className="mb-6 text-2xl font-semibold text-muted-foreground">
+          データから
+          <br />
+          経済を読み解く
         </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="bg-muted/50 py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col items-center text-center">
-              <div className="rounded-lg bg-primary/10 p-3 ring-1 ring-primary/20">
-                <BookOpen className="h-6 w-6" />
-              </div>
-              <h2 className="mt-6 text-xl font-semibold">実践的な研究活動</h2>
-              <p className="mt-4 text-muted-foreground">
-                最新の研究テーマに取り組み、実践的なスキルを身につけます。
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="rounded-lg bg-primary/10 p-3 ring-1 ring-primary/20">
-                <Users className="h-6 w-6" />
-              </div>
-              <h2 className="mt-6 text-xl font-semibold">充実した環境</h2>
-              <p className="mt-4 text-muted-foreground">
-                少人数制で密度の濃い議論と、手厚い指導を提供します。
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="rounded-lg bg-primary/10 p-3 ring-1 ring-primary/20">
-                <GraduationCap className="h-6 w-6" />
-              </div>
-              <h2 className="mt-6 text-xl font-semibold">キャリア支援</h2>
-              <p className="mt-4 text-muted-foreground">
-                研究成果を活かしたキャリアパスを支援します。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div className="mb-6 text-5xl font-bold">佐藤整尚ゼミ</div>
+        <div className="text-md font-medium text-muted-foreground">東京大学 経済学部</div>
+      </div>
     </div>
   );
 }
