@@ -42,7 +42,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navigation() {
   return (
-    <div className="border-b">
+    <header className="border-b">
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4">
         <NavigationMenu>
           <NavigationMenuList>
@@ -78,7 +78,7 @@ export function Navigation() {
           <ModeToggle />
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
