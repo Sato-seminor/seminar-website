@@ -49,7 +49,9 @@ export function Navigation() {
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Image src="/seminar-logo.svg" width={64} height={48} alt="ゼミロゴ" />
+                  <div className="mt-3">
+                    <Image src="/seminar-logo.svg" width={64} height={48} alt="ゼミロゴ" />
+                  </div>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
