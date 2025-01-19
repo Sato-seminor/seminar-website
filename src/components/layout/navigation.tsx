@@ -6,11 +6,9 @@ import * as React from 'react';
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/cn';
@@ -38,25 +36,17 @@ export function Navigation() {
     <header className="border-b">
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4">
         <Image src={logo} width={64} height={48} alt="ゼミロゴ" />
-        <NavigationMenu>
+        <NavigationMenu className="ml-6">
           <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>ゼミ紹介</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                  {PAGES.map((page) => (
-                    <ListItem key={page.name} title={page.name} href={page.path}></ListItem>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/join" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  参加方法
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
+            {PAGES.map(({ name, path }) => (
+              <NavigationMenuItem key={path}>
+                <Link href={path} legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    {name}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            ))}
           </NavigationMenuList>
         </NavigationMenu>
         <div className="ml-auto">
