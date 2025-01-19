@@ -41,7 +41,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navigation() {
   return (
-    <div className="border-b">
+    <div className="sticky top-0 z-50 border-b bg-background">
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4">
         <NavigationMenu>
           <NavigationMenuList>
@@ -65,9 +65,9 @@ export function Navigation() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/join" legacyBehavior passHref>
+              <Link href="/selection" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  参加方法
+                  選考情報
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
