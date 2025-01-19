@@ -46,12 +46,10 @@ export function Navigation() {
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4">
         <NavigationMenu>
           <NavigationMenuList>
-            <NavigationMenuItem>
+            <NavigationMenuItem className="mt-2">
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <div className="mt-3">
-                    <Image src="/seminar-logo.svg" width={64} height={48} alt="ゼミロゴ" />
-                  </div>
+                  <Image src="/seminar-logo.svg" width={64} height={48} alt="ゼミロゴ" />
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
