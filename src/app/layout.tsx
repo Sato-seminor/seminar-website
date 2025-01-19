@@ -23,10 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem
           disableTransitionOnChange
         >
-          <div className="sticky top-0 z-50">
-            <Navigation />
-          </div>
-          <main>{children}</main>
+          <Navigation />
+          <main className="min-h-screen">{children}</main>
         </ThemeProvider>
       </body>
     </html>
