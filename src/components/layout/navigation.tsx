@@ -16,27 +16,20 @@ import {
 import { cn } from '@/lib/cn';
 
 import { ModeToggle } from './mode-toggle';
+import logo from '../../../public/seminar-logo.svg';
 
-const components: { title: string; href: string; description: string }[] = [
+const PAGES: { name: string; path: string }[] = [
   {
-    title: '説明会',
-    href: '/about/briefing',
-    description: 'ゼミ説明会の日程と内容について',
+    name: 'ゼミ紹介',
+    path: 'about',
   },
   {
-    title: 'ゼミの内容',
-    href: '/about/content',
-    description: 'ゼミで学べる内容と特徴について',
+    name: '活動内容',
+    path: 'activities',
   },
   {
-    title: 'メルコ',
-    href: '/about/melco',
-    description: 'メルコ学術振興財団の研究助成プログラム',
-  },
-  {
-    title: 'ゼミ合宿',
-    href: '/about/camp',
-    description: '年に2回開催されるゼミ合宿の様子',
+    name: '選考情報',
+    path: 'selection',
   },
 ];
 
@@ -44,23 +37,15 @@ export function Navigation() {
   return (
     <header className="border-b">
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4">
+        <Image src={logo} width={64} height={48} alt="ゼミロゴ" />
         <NavigationMenu>
           <NavigationMenuList>
-            <NavigationMenuItem className="mt-2">
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Image src="/seminar-logo.svg" width={64} height={48} alt="ゼミロゴ" />
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>ゼミ紹介</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                  {components.map((component) => (
-                    <ListItem key={component.title} title={component.title} href={component.href}>
-                      {component.description}
-                    </ListItem>
+                  {PAGES.map((page) => (
+                    <ListItem key={page.name} title={page.name} href={page.path}></ListItem>
                   ))}
                 </ul>
               </NavigationMenuContent>
