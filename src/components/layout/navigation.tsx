@@ -56,13 +56,6 @@ export function Navigation() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  トップページ
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
               <NavigationMenuTrigger>ゼミ紹介</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
