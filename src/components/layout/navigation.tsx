@@ -65,9 +65,9 @@ export function Navigation() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/join" legacyBehavior passHref>
+              <Link href="/selection" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  参加方法
+                  選考情報
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
