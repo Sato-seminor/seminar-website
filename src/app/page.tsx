@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import sphereImage from '@/../public/sphere.png';
+
 export default function Home() {
   return (
     <div>
@@ -10,7 +12,7 @@ export default function Home() {
       */}
       <div className="absolute inset-0 mt-16 flex justify-center bg-gradient-to-r from-primary/10 via-primary/5 to-background md:items-center">
         <Image
-          src="/sphere.png"
+          src={sphereImage}
           alt="球体"
           width={600}
           height={600}
