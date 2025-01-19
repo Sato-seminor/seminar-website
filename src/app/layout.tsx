@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           disableTransitionOnChange
         >
           <Navigation />
-          <main className="min-h-screen">{children}</main>
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
