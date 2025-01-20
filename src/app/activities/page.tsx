@@ -2,7 +2,7 @@ import dataScience from '@/../public/datascience.jpg';
 import football from '@/../public/football.jpg';
 import pc from '@/../public/pc.png';
 import trip from '@/../public/trip.jpg';
-import { DescriptionWithImage } from '@/features/about/components/description-with-image';
+import { DescriptionWithImage } from '@/features/activities/components/description-with-image';
 
 export default function SeminarPage() {
   return (
