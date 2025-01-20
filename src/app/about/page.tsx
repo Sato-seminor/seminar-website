@@ -28,7 +28,6 @@ export default function SeminarPage() {
               alt: 'メンバー写真',
               width: 400,
               height: 400,
-              className: 'rounded-lg shadow-lg',
             }}
             imagePosition="right"
           />
@@ -64,7 +63,6 @@ export default function SeminarPage() {
               alt: '教授の写真',
               width: 200,
               height: 200,
-              className: 'rounded-lg shadow-lg',
             }}
             imagePosition="left"
           />
@@ -88,7 +86,6 @@ export default function SeminarPage() {
               alt: '進路の分類',
               width: 500,
               height: 500,
-              className: 'rounded-lg shadow-lg',
             }}
             imagePosition="right"
           />

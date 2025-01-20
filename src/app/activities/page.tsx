@@ -30,7 +30,6 @@ export default function SeminarPage() {
               alt: '教材の写真',
               width: 300,
               height: 300,
-              className: 'rounded-lg shadow-lg',
             }}
             imagePosition="right"
           />
@@ -52,7 +51,6 @@ export default function SeminarPage() {
               alt: '共同研究',
               width: 200,
               height: 200,
-              className: 'rounded-lg shadow-lg',
             }}
             imagePosition="left"
           />
@@ -76,7 +74,6 @@ export default function SeminarPage() {
               alt: 'フットサル大会',
               width: 400,
               height: 400,
-              className: 'rounded-lg shadow-lg',
             }}
             imagePosition="right"
           />
@@ -101,7 +98,6 @@ export default function SeminarPage() {
               alt: '宿泊場所',
               width: 300,
               height: 300,
-              className: 'rounded-lg shadow-lg',
             }}
             imagePosition="left"
           />
