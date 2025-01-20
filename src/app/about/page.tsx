@@ -1,3 +1,6 @@
+import allMembers from '@/../public/all_members.jpg';
+import career from '@/../public/career_chart.jpg';
+import professor from '@/../public/professor-image.png';
 import { DescriptionWithImage } from '@/features/about/components/description-with-image';
 
 export default function SeminarPage() {
@@ -21,7 +24,7 @@ export default function SeminarPage() {
               </ul>
             }
             imageProps={{
-              src: '/all_members.jpg',
+              src: allMembers,
               alt: 'メンバー写真',
               width: 400,
               height: 400,
@@ -57,7 +60,7 @@ export default function SeminarPage() {
               </div>
             }
             imageProps={{
-              src: '/professor-image.png',
+              src: professor,
               alt: '教授の写真',
               width: 200,
               height: 200,
@@ -81,7 +84,7 @@ export default function SeminarPage() {
               </p>
             }
             imageProps={{
-              src: '/career_chart.jpg',
+              src: career,
               alt: '進路の分類',
               width: 500,
               height: 500,

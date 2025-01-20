@@ -1,3 +1,7 @@
+import dataScience from '@/../public/datascience.jpg';
+import football from '@/../public/football.jpg';
+import pc from '@/../public/pc.png';
+import trip from '@/../public/trip.jpg';
 import { DescriptionWithImage } from '@/features/about/components/description-with-image';
 
 export default function SeminarPage() {
@@ -22,7 +26,7 @@ export default function SeminarPage() {
               </ul>
             }
             imageProps={{
-              src: '/datascience.jpg',
+              src: dataScience,
               alt: '教材の写真',
               width: 300,
               height: 300,
@@ -44,7 +48,7 @@ export default function SeminarPage() {
               </p>
             }
             imageProps={{
-              src: '/pc.png',
+              src: pc,
               alt: '共同研究',
               width: 200,
               height: 200,
@@ -68,7 +72,7 @@ export default function SeminarPage() {
               </ul>
             }
             imageProps={{
-              src: '/football.jpg',
+              src: football,
               alt: 'フットサル大会',
               width: 400,
               height: 400,
@@ -93,7 +97,7 @@ export default function SeminarPage() {
               </ul>
             }
             imageProps={{
-              src: '/trip.jpg',
+              src: trip,
               alt: '宿泊場所',
               width: 300,
               height: 300,
