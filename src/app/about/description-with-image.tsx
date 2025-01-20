@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import { ReactNode } from 'react';
+import { ComponentProps, ReactNode } from 'react';
 
 import { cn } from '@/lib/cn';
 
 export interface DescriptionWithImageProps {
   title: ReactNode;
   content: ReactNode;
-  imageProps: Parameters<typeof Image>[0];
+  imageProps: ComponentProps<typeof Image>;
   imagePosition: 'left' | 'right';
 }
 
