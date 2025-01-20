@@ -1,4 +1,4 @@
-import { DescriptionWithImage } from './description-with-image';
+import { DescriptionWithImage } from '@/features/about/components/description-with-image';
 
 export default function SeminarPage() {
   return (
