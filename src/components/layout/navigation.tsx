@@ -12,7 +12,6 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 
-import { ModeToggle } from './mode-toggle';
 import logo from '../../../public/seminar-logo.svg';
 
 const PAGES: { name: string; path: string }[] = [
@@ -50,9 +49,6 @@ export function Navigation() {
             ))}
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="ml-auto">
-          <ModeToggle />
-        </div>
       </div>
     </header>
   );
