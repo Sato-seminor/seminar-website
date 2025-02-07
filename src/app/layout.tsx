@@ -9,8 +9,8 @@ import { Navigation } from '@/components/layout/navigation';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ゼミナール',
-  description: '大学ゼミナールの公式ウェブサイト',
+  title: '佐藤整尚ゼミ',
+  description: '東京大学経済学部 佐藤整尚ゼミ',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
