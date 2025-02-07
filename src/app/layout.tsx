@@ -23,8 +23,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem
           disableTransitionOnChange
         >
-          <Navigation />
-          <main>{children}</main>
+          <div className="flex min-h-screen flex-col">
+            <div className="fixed top-0 z-50 w-full bg-background">
+              <Navigation />
+            </div>
+            <main className="mt-16 flex-1">{children}</main>
+          </div>
         </ThemeProvider>
       </body>
     </html>
