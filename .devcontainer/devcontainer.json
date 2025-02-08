@@ -1,0 +1,27 @@
+{
+  "name": "Seminar Website",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bookworm",
+  // Nextが起動するサーバーのポートを転送
+  "forwardPorts": [3000],
+  // NOTE: https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-a-targeted-named-volume
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
+  // Docker on WSLでホットリロードが効くようにする
+  "containerEnv": {
+    "WATCHPACK_POLLING": "true"
+  },
+  // NOTE: https://gist.github.com/Seasawher/18f5781e372e4fbe691ee8942828bd8e
+  "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && sudo chown node node_modules && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "github.vscode-github-actions",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
+}
