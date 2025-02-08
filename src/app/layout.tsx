@@ -19,7 +19,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          // ダークモードに対応していないため、一時的にライトモードに設定
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
