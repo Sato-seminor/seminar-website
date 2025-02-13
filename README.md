@@ -1,21 +1,21 @@
 <div align="center">
   <p>
-    <img src="public/seminar-logo.svg" width="50%" />
+    <img src="public/seminar-logo.svg" alt="ロゴ" width="50%" />
   </p>
 
   <h1>Sato Seminar's Website</h1>
 
   <p>
-    <img src="https://skillicons.dev/icons?i=ts,next,react,tailwind" />
+    <img src="https://skillicons.dev/icons?i=ts,react,next,tailwind" alt="使用技術" />
   </p>
 
   <p>
     <a href="https://github.com/Sato-seminor/seminar-website/actions/workflows/deploy.yml">
-      <img src="https://github.com/Sato-seminor/seminar-website/actions/workflows/deploy.yml/badge.svg" />
+      <img src="https://github.com/Sato-seminor/seminar-website/actions/workflows/deploy.yml/badge.svg" alt="デプロイのステータス" />
     </a>
-    <img src="https://img.shields.io/coderabbit/prs/github/Sato-seminor/seminar-website" />
+    <img src="https://img.shields.io/coderabbit/prs/github/Sato-seminor/seminar-website" alt="CodeRabbitのステータス" />
     <a href="https://x.com/s_sato_seminar">
-      <img src="https://img.shields.io/twitter/follow/s_sato_seminar" />
+      <img src="https://img.shields.io/twitter/follow/s_sato_seminar" alt="Xのリンク" />
     </a>
   </p>
 </div>
