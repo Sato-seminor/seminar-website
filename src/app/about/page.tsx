@@ -1,7 +1,7 @@
 import allMembers from '@/../public/all_members.jpg';
 import career from '@/../public/career_chart.jpg';
 import professor from '@/../public/professor-image.png';
-import { DescriptionWithImage } from '@/features/about/components/description-with-image';
+import { DescriptionWithImage } from '@/components/description-with-image';
 
 export default function SeminarPage() {
   return (
