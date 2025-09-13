@@ -5,14 +5,14 @@ import { questions } from '@/features/selection/data/questions';
 
 export default function Selection() {
   return (
-    <div className="min-h-screen">
-      <div className="mx-auto max-w-5xl px-4 py-12">
-        <h1 className="mb-12 text-4xl font-bold">選考について</h1>
+    <section className="min-h-screen bg-gradient-to-r from-primary/10 via-primary/5 to-background py-16">
+      <div className="mx-auto max-w-5xl px-4">
+        <h1 className="mb-12 text-center text-4xl font-bold">選考について</h1>
         {descriptionSections.map((section) => (
           <DescriptionSection key={section.id} {...section} />
         ))}
         <Questions questions={questions} />
       </div>
-    </div>
+    </section>
   );
 }
