@@ -24,7 +24,7 @@ export function DescriptionWithImage({
         {imageProps && (
           <Image
             {...imageProps}
-            alt={imageProps.alt || '画像'}
+            alt={imageProps.alt ?? '画像'}
             className={cn(
               'rounded-lg shadow-lg md:w-1/3',
               imagePosition === 'left' ? 'order-first' : 'order-last',
@@ -32,7 +32,7 @@ export function DescriptionWithImage({
             )}
           />
         )}
-        <div className="text-gray-700 md:w-2/3">{content}</div>
+        <div className="text-gray-700 md:w-full">{content}</div>
       </div>
     </>
   );
