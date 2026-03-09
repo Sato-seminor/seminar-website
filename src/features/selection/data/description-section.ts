@@ -5,7 +5,7 @@ export const descriptionSections: (DescriptionSectionProps & { id: string })[] =
     id: 'd1',
     title: 'ゼミへの応募方法',
     description:
-      '2024年度は、志望動機（300字程度）、自己紹介動画（1分程度）、コーディング問題（初心者向け）の提出を求めていました。',
+      '2026年度のゼミ選抜では簡単な志望理由書や履歴に関するフォームの提出とゼミ生との簡単な面談を行います。',
   },
   {
     id: 'd2',
