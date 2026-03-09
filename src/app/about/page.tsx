@@ -36,7 +36,7 @@ export default function SeminarPage() {
                 <h3 className="text-xl font-semibold text-gray-800">佐藤整尚 准教授</h3>
                 <ul className="mt-4 space-y-4 text-lg text-gray-700">
                   <li>
-                    <strong>経歴:</strong> 経歴:
+                    <strong>経歴:</strong>
                     実証ファイナンスがご専門。東京大学経済学部卒、東京工業大学で修士・博士（工学）を取得後、統計数理研究所を経て、2013年より東京大学経済学研究科に着任。東京大学金融教育研究センター
                     副センター長。テニスサークルALLDCのOBです。
                   </li>
