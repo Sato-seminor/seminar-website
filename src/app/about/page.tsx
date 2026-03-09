@@ -1,4 +1,3 @@
-import allMembers from '@/../public/all_members.jpg';
 import career from '@/../public/career_chart.jpg';
 import professor from '@/../public/professor-image.png';
 import { DescriptionWithImage } from '@/features/about/components/description-with-image';
@@ -23,13 +22,6 @@ export default function SeminarPage() {
                 </li>
               </ul>
             }
-            imageProps={{
-              src: allMembers,
-              alt: 'メンバー写真',
-              width: 400,
-              height: 400,
-            }}
-            imagePosition="right"
           />
         </div>
       </section>
@@ -50,10 +42,6 @@ export default function SeminarPage() {
                   <li>
                     <strong>研究分野:</strong>{' '}
                     計量ファイナンス、時系列分析、モンテカルロフィルタを用いた金利モデルの推定、経済時系列予測など。
-                  </li>
-                  <li>
-                    <strong>主な業績:</strong>{' '}
-                    多変量自己回帰モデルやモンテカルロフィルタを応用した金融モデリングに関する論文を発表。
                   </li>
                 </ul>
               </div>

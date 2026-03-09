@@ -2,12 +2,6 @@ import { Question } from '@/features/selection/components/questions';
 
 export const questions: Question[] = [
   {
-    id: 'q1',
-    question: '事前知識はどのくらい必要ですか？',
-    answer:
-      'プログラミング：できるに越したことはありませんが、初心者でも問題ありません。（初心者の方にはSセメスターの「Pythonプログラミング入門」の履修を推奨します）\n数学：3Sの「微積分」および「線形代数」の履修を推奨します。\n統計：2Aの「統計学」をしっかり学びましょう。（さらに3Sの「数理統計」や3Aの「計量経済学」を履修すると、より理解が深まります）',
-  },
-  {
     id: 'q2',
     question: 'ダブゼミは可能ですか？',
     answer:
