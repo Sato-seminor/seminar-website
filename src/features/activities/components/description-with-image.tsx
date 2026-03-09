@@ -31,7 +31,7 @@ export function DescriptionWithImage({
           )}
         />
 
-        <div className="text-gray-700 md:w-2/3">{content}</div>
+        <div className="text-gray-700 md:w-full">{content}</div>
       </div>
     </>
   );
