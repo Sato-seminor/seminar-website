@@ -27,6 +27,29 @@ export default function Home() {
           </div>
           <div className="mb-6 text-5xl font-bold">佐藤整尚ゼミ</div>
           <div className="text-md font-medium text-muted-foreground">東京大学 経済学部</div>
+          <div className="mt-8 space-y-2">
+            <p className="text-sm font-semibold text-muted-foreground">
+              以下のSNSで情報を発信しています
+            </p>
+            <div className="flex flex-col gap-1 text-sm">
+              <a
+                href="https://x.com/s_sato_seminar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                X (Twitter) → https://x.com/s_sato_seminar
+              </a>
+              <a
+                href="https://www.instagram.com/s_sato_seminar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                Instagram → https://www.instagram.com/s_sato_seminar
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
