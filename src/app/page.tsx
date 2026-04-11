@@ -27,27 +27,49 @@ export default function Home() {
           </div>
           <div className="mb-6 text-5xl font-bold">佐藤整尚ゼミ</div>
           <div className="text-md font-medium text-muted-foreground">東京大学 経済学部</div>
-          <div className="mt-8 space-y-2">
-            <p className="text-sm font-semibold text-muted-foreground">
-              以下のSNSで情報を発信しています
-            </p>
-            <div className="flex flex-col gap-1 text-sm">
+          <div className="mt-8 space-y-6">
+            <div className="max-w-md rounded-lg border border-primary/25 bg-background/85 p-4 text-sm shadow-sm backdrop-blur-sm">
+              <p className="font-bold text-foreground">【選考のお知らせ】</p>
+              <p className="mt-2 text-muted-foreground">
+                佐藤整尚ゼミでは、一次選考のエントリー受付を開始いたしました！
+                少しでも興味のある方は、ぜひお気軽にご応募ください！
+              </p>
+              <p className="mt-3 font-medium text-foreground">▼応募フォーム・詳細はこちら</p>
               <a
-                href="https://x.com/s_sato_seminar"
+                href="https://forms.gle/ra4h9SoVyoNddCUq8"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:underline"
+                className="mt-1 inline-block break-all text-primary hover:underline"
               >
-                X (Twitter) → https://x.com/s_sato_seminar
+                https://forms.gle/ra4h9SoVyoNddCUq8
               </a>
-              <a
-                href="https://www.instagram.com/s_sato_seminar"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                Instagram → https://www.instagram.com/s_sato_seminar
-              </a>
+              <p className="mt-2 text-muted-foreground">
+                一次選考のESの締め切り：4/13（月）11:00
+              </p>
+              <p className="mt-2 text-muted-foreground">皆さんのご応募をお待ちしております！</p>
+            </div>
+            <div className="space-y-2">
+              <p className="text-sm font-semibold text-muted-foreground">
+                以下のSNSで情報を発信しています
+              </p>
+              <div className="flex flex-col gap-1 text-sm">
+                <a
+                  href="https://x.com/s_sato_seminar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  X (Twitter) → https://x.com/s_sato_seminar
+                </a>
+                <a
+                  href="https://www.instagram.com/s_sato_seminar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Instagram → https://www.instagram.com/s_sato_seminar
+                </a>
+              </div>
             </div>
           </div>
         </div>
