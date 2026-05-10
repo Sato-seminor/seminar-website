@@ -46,3 +46,4 @@
 ## 開発
 
 開発者向けの情報は [Wiki](https://github.com/Sato-seminor/seminar-website/wiki) に記載されています。
+
